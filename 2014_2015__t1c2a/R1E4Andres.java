@@ -17,8 +17,8 @@ package pkg2014_2015__t1c2a;
  */
 public class R1E4Andres {
     public static void main(String[] args) {
-        int [] numeros = new int[6];
-        int [] desorden = new int[6];
+        int [] numeros = new int[10];
+        int [] desorden = new int[10];
         
         for(int i=0; i<numeros.length;i++){
             numeros[i]=(int)(Math.random()*100);
@@ -27,28 +27,28 @@ public class R1E4Andres {
         System.out.println("\n\nArray de 10 numeros enteros :");
 
         System.out.print("┌");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print("─────┬");
         }
         System.out.print("────┐");
         System.out.print("\n│ Índice ");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.printf(" %5d    ", i);
         }
 
         System.out.print("\n├");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print("─────┼");
         }
         System.out.print("────┤");
         System.out.print("\n│ Numeros");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.printf("  %5s   ", numeros[i]);
         }
  
 
         System.out.print("\n└");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print("─────┴");
         }
         System.out.print("────┘");
@@ -59,7 +59,7 @@ public class R1E4Andres {
             int aleatorio;
             do{
                 repetido = false;
-                aleatorio = numeros[(int)(Math.random()*6)];
+                aleatorio = numeros[(int)(Math.random()*10)];
                 //System.out.println("aleatorio antes del for: "+aleatorio+" ");
                 for(int e=0;e<i;e++){
                     //System.out.print("array["+e+"]= "+desorden[e]+" ");
@@ -76,28 +76,28 @@ public class R1E4Andres {
         System.out.println("\n\nArray de 10 numeros enteros desordenados :");
 
         System.out.print("┌");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print("─────┬");
         }
         System.out.print("────┐");
         System.out.print("\n│ Índice ");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.printf(" %5d    ", i);
         }
 
         System.out.print("\n├");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print("─────┼");
         }
         System.out.print("────┤");
         System.out.print("\n│ Numeros");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.printf("  %5s   ", desorden[i]);
         }
  
 
         System.out.print("\n└");
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.print("─────┴");
         }
         System.out.print("────┘");
